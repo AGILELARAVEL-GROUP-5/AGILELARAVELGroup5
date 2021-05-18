@@ -49,12 +49,12 @@
                     <a class="underline text-sm text-gray-600 hover:text-gray-900" href="{{ route('password.request') }}">
                         {{ __('Forgot your password?') }}
                     </a>
-                      -->
+                   
                 @endif
                 @if (Route::has('register'))
                             <a href="{{ route('register') }}" class="ml-4 text-sm text-gray-700 underline">Sign up</a>
                 @endif
-
+                   -->
     
             
        
