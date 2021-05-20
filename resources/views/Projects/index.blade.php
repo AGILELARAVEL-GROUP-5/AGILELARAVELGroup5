@@ -2,8 +2,6 @@
 
 @section('content')
 
-
-        
     <div class="row">
         <div class="col-lg-12 margin-tb">       
             <div class="pull-right">
@@ -25,7 +23,7 @@
             <th>Introduction</th>
             <th>Location</th>
             <th>Date Created</th>
-            <th style="position: relative;">Action</th>
+            <th>Action</th>
         </tr>
         @foreach ($projects as $project)
             <tr>
