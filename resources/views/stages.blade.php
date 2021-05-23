@@ -1,7 +1,9 @@
-@extends('agile')
+@extends('layouts.agile')
 @section('content')
 
-<div>
+
+<div class="container">
+    <div class="row justify-content-center">
 
       <br>
       <h3>What are the Stages of Agile Development?</h3>
@@ -88,10 +90,10 @@ the deployment is called the full-fledged product deployment.
 
     <h3>The Agile development methodology lifecycle? </h3>
     <br>
-    <div class="img1"><img src="{{asset('/images/waterprocesslifecycle.jpg')}}" height="300" width="600" style ="float: left"></div>
+    <div class="img1"><img src="{{asset('/images/waterprocesslifecycle.jpg')}}" height="300" width="600" style ="position: relative;"></div>
      
+    </div>
 </div>
-
 
 
 @stop

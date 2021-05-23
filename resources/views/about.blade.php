@@ -1,8 +1,9 @@
-@extends('agile')
+@extends('layout.agile')
 @section('content')
 
 
-<div>
+<div class="container">
+    <div class="row justify-content-center">
 
       <br>
       <h1>About</h1>
@@ -28,7 +29,9 @@
       related to the Waterfall methodology, which leads to piling technical debts.
       </p>
 
-      <div class="img1"><img src="{{asset('/images/waterprocess.jpg')}}" height="300" width="600" style ="float: left"></div>
+     <img src="{{asset('/images/waterprocess.jpg')}}" height="300" width="600" style ="position: relative;">
+     
+      </div>
 </div>
 
 

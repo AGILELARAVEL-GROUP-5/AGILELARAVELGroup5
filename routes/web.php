@@ -13,9 +13,25 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/',[App\Http\Controllers\AGILEController::class,'about']);
+
+/*
 Route::get('/about',[App\Http\Controllers\AGILEController::class,'about']);
 Route::get('/method',[App\Http\Controllers\AGILEController::class,'method']);
 Route::get('/stages',[App\Http\Controllers\AGILEController::class,'stages']);
 Route::get('/principle',[App\Http\Controllers\AGILEController::class,'principle']);
 Route::get('/process',[App\Http\Controllers\AGILEController::class,'process']);
+*/
+
+Auth::routes();
+Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+
+Route::group(['middleware' => 'auth'], function(){
+
+    Route::get('/about', [App\Http\Controllers\AGILEController::class, 'about'])->name('about');
+    Route::get('/method', [App\Http\Controllers\AGILEController::class, 'method'])->name('method');
+    Route::get('/stages', [App\Http\Controllers\AGILEController::class, 'stages'])->name('stages');
+    Route::get('/principle', [App\Http\Controllers\AGILEController::class, 'principle'])->name('principle');
+    Route::get('/process', [App\Http\Controllers\AGILEController::class, 'process'])->name('process');
+});
