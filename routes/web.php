@@ -28,7 +28,7 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 
 
 Route::group(['middleware' => 'auth'], function(){
-
+    Route::resource('projects', ProjectController::class);
     Route::get('/about', [App\Http\Controllers\AGILEController::class, 'about'])->name('about');
     Route::get('/method', [App\Http\Controllers\AGILEController::class, 'method'])->name('method');
     Route::get('/stages', [App\Http\Controllers\AGILEController::class, 'stages'])->name('stages');
