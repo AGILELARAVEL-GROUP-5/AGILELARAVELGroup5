@@ -1,8 +1,19 @@
-@extends('agile')
+@extends('layouts.app')
+
 @section('content')
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-header">Process</div>
+                <div class="card-body">
+                    @if (session('status'))
+                        <div class="alert alert-success" role="alert">
+                            {{ session('status') }}
+                        </div>
+                    @endif
 
-<div>
-
+                    
       <br>
       <h3>Processes Involved in Agile Development Methodology</h3>
       <br>
@@ -69,8 +80,9 @@ It is all about learning from mistakes and finding better and foolproof ways to 
         </ul>
 
      </p>
-
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
-
-
-@stop
+@endsection

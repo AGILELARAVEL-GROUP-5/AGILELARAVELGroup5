@@ -1,12 +1,23 @@
-@extends('agile')
+@extends('layouts.app')
+
 @section('content')
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-header">
 
+                <h1>About</h1>
+                
+                </div>
+                
+                <div class="card-body">
+                    @if (session('status'))
+                        <div class="alert alert-success" role="alert">
+                            {{ session('status') }}
+                        </div>
+                    @endif
 
-<div>
-
-      <br>
-      <h1>About</h1>
-      <br>
       <p>
       According to the State of Agile Report 2020, 95% of the respondents 
       (no. of respondents over 40000) prefer Agile Development methodology. 
@@ -28,8 +39,16 @@
       related to the Waterfall methodology, which leads to piling technical debts.
       </p>
 
-      <div class="img1"><img src="{{asset('/images/waterprocess.jpg')}}" height="300" width="600" style ="float: left"></div>
+      <img src="{{asset('/images/waterprocess.jpg')}}" style="height: 100%; width: 100%; position: relative;">
+
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
+@endsection
 
 
-@stop
+
+
+

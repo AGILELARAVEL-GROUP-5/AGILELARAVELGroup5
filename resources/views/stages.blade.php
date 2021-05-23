@@ -1,9 +1,21 @@
-@extends('agile')
+@extends('layouts.app')
+
 @section('content')
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-header">
+                <h1>Stages</h1>
+                </div>
+                <div class="card-body">
+                    @if (session('status'))
+                        <div class="alert alert-success" role="alert">
+                            {{ session('status') }}
+                        </div>
+                    @endif
 
-<div>
-
-      <br>
+                    <br>
       <h3>What are the Stages of Agile Development?</h3>
       <br>
       <p>
@@ -88,10 +100,12 @@ the deployment is called the full-fledged product deployment.
 
     <h3>The Agile development methodology lifecycle? </h3>
     <br>
-    <div class="img1"><img src="{{asset('/images/waterprocesslifecycle.jpg')}}" height="300" width="600" style ="float: left"></div>
-     
+    <div>
+    <img src="{{asset('/images/waterprocesslifecycle.jpg')}}" style="height: 100%; width: 100%; position: relative;">
+    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
-
-
-
-@stop
+@endsection

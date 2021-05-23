@@ -5,7 +5,8 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header">Principle</div>
+                <div class="card-header">{{ __('Dashboard') }}</div>
+
                 <div class="card-body">
                     @if (session('status'))
                         <div class="alert alert-success" role="alert">
@@ -13,12 +14,7 @@
                         </div>
                     @endif
 
-                    <br>
-
-        
-        <img src="{{asset('/images/agileprinciples.jpg')}}" style="height: 100%; width: 100%; position: relative;">
-        
-        <br>
+                    {{ __('You are logged in!') }}
                 </div>
             </div>
         </div>

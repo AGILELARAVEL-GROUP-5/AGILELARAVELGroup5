@@ -1,10 +1,24 @@
-@extends('agile')
+@extends('layouts.app')
 
 @section('content')
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-header">
+                
+                <h1>Methodology</h1>
+                
+                </div>
+                
+                <div class="card-body">
+                    @if (session('status'))
+                        <div class="alert alert-success" role="alert">
+                            {{ session('status') }}
+                        </div>
+                    @endif
 
-<div>
-
-      <br>
+                    <br>
       <h3>What is Agile Development Methodology?</h3>
       <br>
       <p>
@@ -44,9 +58,9 @@
 
     <br>
     
-     <div class = "img1">
-      <img src="{{asset('/images/waterfallprocess.jpg')}}" height="400" width="auto" style ="float: left">
-      </div >
+   
+      <img src="{{asset('/images/waterfallprocess.jpg')}}" style="height: 100%; width: 100%; position: relative;">
+    
      
       <br>
 
@@ -77,8 +91,10 @@
     Retrospectives — learning from past experiences and rectifying 
     the mistakes in the following sprints and projects.
     </p> 
-     
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
+@endsection
 
-
-@stop
