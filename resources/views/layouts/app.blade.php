@@ -56,6 +56,9 @@
                     <li class="nav-item">
                     <a class="nav-link" href="{{url('process')}}">Process</a>
                     </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="{{ route('projects.index') }}" :active="request()->routeIs('projects.*')">AGILECRUD</a>
+                    </li>
 
                     </ul>
                   <!-- Right Side Of Navbar -->
