@@ -1,15 +1,12 @@
-<x-app-layout>
-    <x-slot name="header">
-        <h2 class="font-bold text-xl text-gray-800 leading-tight">
-            {{ __('About') }}
-        </h2>
-    </x-slot>
+@extends('agile')
+@section('content')
 
-    <div class="py-12 px-12">
-        <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
-            <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
-                <div class="font-sans font-semibold text-2xl p-6 bg-white border-8 rounded-3xl border-blue-800">
 
+<div>
+
+      <br>
+      <h1>About</h1>
+      <br>
       <p>
       According to the State of Agile Report 2020, 95% of the respondents 
       (no. of respondents over 40000) prefer Agile Development methodology. 
@@ -31,12 +28,8 @@
       related to the Waterfall methodology, which leads to piling technical debts.
       </p>
 
-       <img src="{{asset('/images/waterprocess.jpg')}}" class="center" style="height: 500px; width: 800px; position: relative;">
+      <div class="img1"><img src="{{asset('/images/waterprocess.jpg')}}" height="300" width="600" style ="float: left"></div>
+</div>
 
 
-
-                </div>
-            </div>
-        </div>
-    </div>
-</x-app-layout>
+@stop

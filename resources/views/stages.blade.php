@@ -1,17 +1,10 @@
-<x-app-layout>
-    <x-slot name="header">
-        <h2 class="font-bold text-xl text-gray-800 leading-tight">
-            {{ __('What are the Stages of Agile Development?') }}
-        </h2>
-    </x-slot>
+@extends('agile')
+@section('content')
 
-    <div class="py-12 px-12">
-        <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
-            <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
-                <div class="font-sans font-semibold text-2xl p-6 bg-white border-8 rounded-3xl border-blue-800">
+<div>
 
-
-
+      <br>
+      <h3>What are the Stages of Agile Development?</h3>
       <br>
       <p>
       The Agile Development lifecycle process follows the plan, code, test, deploy, and repeat model. 
@@ -95,12 +88,10 @@ the deployment is called the full-fledged product deployment.
 
     <h3>The Agile development methodology lifecycle? </h3>
     <br>
-    <div>
-    <img src="{{asset('/images/waterprocesslifecycle.jpg')}}"  class="center" style="height: 450px; width: 800px; position: relative;">
-    </div>
+    <div class="img1"><img src="{{asset('/images/waterprocesslifecycle.jpg')}}" height="300" width="600" style ="float: left"></div>
      
-                </div>
-            </div>
-        </div>
-    </div>
-</x-app-layout>
+</div>
+
+
+
+@stop

@@ -1,7 +1,6 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\ProjectController;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,20 +13,9 @@ use App\Http\Controllers\ProjectController;
 |
 */
 
-
-Route::get('/', [App\Http\Controllers\Auth\AuthenticatedSessionController::class, 'create'])->name('login');
-
-Route::group(['middleware' => 'auth'], function(){    
-    Route::resource('projects', ProjectController::class);
-    Route::get('/agilecrud', [App\Http\Controllers\AGILEController::class, 'agilecrud'])->name('agilecrud');
-    Route::get('/about', [App\Http\Controllers\AGILEController::class, 'about'])->name('about');
-    Route::get('/method', [App\Http\Controllers\AGILEController::class, 'method'])->name('method');
-    Route::get('/stages', [App\Http\Controllers\AGILEController::class, 'stages'])->name('stages');
-    Route::get('/principle', [App\Http\Controllers\AGILEController::class, 'principle'])->name('principle');
-    Route::get('/process', [App\Http\Controllers\AGILEController::class, 'process'])->name('process');
-
-});
-
-
-
-require __DIR__.'/auth.php';
+Route::get('/',[App\Http\Controllers\AGILEController::class,'about']);
+Route::get('/about',[App\Http\Controllers\AGILEController::class,'about']);
+Route::get('/method',[App\Http\Controllers\AGILEController::class,'method']);
+Route::get('/stages',[App\Http\Controllers\AGILEController::class,'stages']);
+Route::get('/principle',[App\Http\Controllers\AGILEController::class,'principle']);
+Route::get('/process',[App\Http\Controllers\AGILEController::class,'process']);

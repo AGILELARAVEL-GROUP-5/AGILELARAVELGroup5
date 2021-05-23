@@ -6,11 +6,6 @@ use Illuminate\Http\Request;
 
 class AGILEController extends Controller
 {
-    //
-    public function dashboard(){
-
-        return view('dashboard');
-    }
     public function about(){
 
         return view('about');
@@ -33,5 +28,4 @@ class AGILEController extends Controller
 
         return view('process');
     }
-    
 }

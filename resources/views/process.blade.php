@@ -1,15 +1,11 @@
-<x-app-layout>
-    <x-slot name="header">
-        <h2 class="font-bold text-xl text-gray-800 leading-tight">
-            {{ __('Processes Involved in Agile Development Methodology') }}
-        </h2>
-    </x-slot>
+@extends('agile')
+@section('content')
 
-    <div class="py-12 px-12">
-        <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
-            <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
-                <div class="font-sans font-semibold text-2xl p-6 bg-white border-8 rounded-3xl border-blue-800">
+<div>
 
+      <br>
+      <h3>Processes Involved in Agile Development Methodology</h3>
+      <br>
       <p>
       1. User Story Prioritization<br><br>
       User stories or features are the functional requirements of the software under development. 
@@ -73,9 +69,8 @@ It is all about learning from mistakes and finding better and foolproof ways to 
         </ul>
 
      </p>
-        
-                </div>
-            </div>
-        </div>
-    </div>
-</x-app-layout>
+
+</div>
+
+
+@stop

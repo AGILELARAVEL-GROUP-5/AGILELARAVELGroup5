@@ -1,15 +1,12 @@
-<x-app-layout>
-    <x-slot name="header">
-        <h2 class="font-bold text-xl text-gray-800 leading-tight">
-            {{ __('What is Agile Development Methodology?') }}
-        </h2>
-    </x-slot>
+@extends('agile')
 
-    <div class="py-12 px-12">
-        <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
-            <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
-                <div class="font-sans font-semibold text-2xl p-6 bg-white border-8 rounded-3xl border-blue-800">
+@section('content')
 
+<div>
+
+      <br>
+      <h3>What is Agile Development Methodology?</h3>
+      <br>
       <p>
        The Agile Development methodology is the innovative approach
        to develop software products 
@@ -47,9 +44,9 @@
 
     <br>
     
-   
-      <img src="{{asset('/images/waterfallprocess.jpg')}}" class="center" style="height: 500px; width: 800px; position: relative;">
-    
+     <div class = "img1">
+      <img src="{{asset('/images/waterfallprocess.jpg')}}" height="400" width="auto" style ="float: left">
+      </div >
      
       <br>
 
@@ -80,10 +77,8 @@
     Retrospectives — learning from past experiences and rectifying 
     the mistakes in the following sprints and projects.
     </p> 
-
      
-                </div>
-            </div>
-        </div>
-    </div>
-</x-app-layout>
+</div>
+
+
+@stop
