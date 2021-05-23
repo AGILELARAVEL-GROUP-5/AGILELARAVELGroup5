@@ -1,8 +1,9 @@
-@extends('agile')
+@extends('layout.agile')
 
 @section('content')
 
-<div>
+<div class="container">
+    <div class="row justify-content-center">
 
       <br>
       <h3>What is Agile Development Methodology?</h3>
@@ -45,7 +46,7 @@
     <br>
     
      <div class = "img1">
-      <img src="{{asset('/images/waterfallprocess.jpg')}}" height="400" width="auto" style ="float: left">
+      <img src="{{asset('/images/waterfallprocess.jpg')}}" height="400" width="auto" style ="position: relative;">
       </div >
      
       <br>
@@ -78,6 +79,7 @@
     the mistakes in the following sprints and projects.
     </p> 
      
+    </div>
 </div>
 
 

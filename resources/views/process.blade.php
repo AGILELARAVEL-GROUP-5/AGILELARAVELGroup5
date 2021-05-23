@@ -1,7 +1,8 @@
-@extends('agile')
+@extends('layouts.agile')
 @section('content')
 
-<div>
+<div class="container">
+    <div class="row justify-content-center">
 
       <br>
       <h3>Processes Involved in Agile Development Methodology</h3>
@@ -70,6 +71,7 @@ It is all about learning from mistakes and finding better and foolproof ways to 
 
      </p>
 
+     </div>
 </div>
 
 
