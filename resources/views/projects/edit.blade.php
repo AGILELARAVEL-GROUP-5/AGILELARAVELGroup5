@@ -30,7 +30,7 @@
 
     @if ($errors->any())
         <div class="alert alert-danger">
-            <strong>Ooops!</strong> Problems with your input.<br><br>
+            <strong>Ooops!</strong> Enter all.<br><br>
             <ul>
                 @foreach ($errors->all() as $error)
                     <li>{{ $error }}</li>
@@ -46,8 +46,8 @@
         <div class="row">
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
-                    <strong>Name:</strong>
-                    <input type="text" name="name" value="{{ $project->name }}" class="form-control" placeholder="Name">
+                    <strong>Title:</strong>
+                    <input type="text" name="title" value="{{ $project->title }}" class="form-control" placeholder="Title">
                 </div>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-12">

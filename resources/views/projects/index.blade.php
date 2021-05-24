@@ -38,7 +38,7 @@
     <table class="table table-bordered table-responsive-lg">
         <tr>
             <th>No</th>
-            <th>Name</th>
+            <th>Title</th>
             <th>Introduction</th>
             <th>Location</th>
             <th>Date Created</th>
@@ -47,7 +47,7 @@
         @foreach ($projects as $project)
             <tr>
                 <td>{{ ++$i }}</td>
-                <td>{{ $project->name }}</td>
+                <td>{{ $project->title }}</td>
                 <td>{{ $project->introduction }}</td>
                 <td>{{ $project->location }}</td>
                 <td>{{ date_format($project->created_at, 'jS M Y') }}</td>
