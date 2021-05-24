@@ -11,6 +11,8 @@
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js"> </script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js"> </script>
    
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
@@ -19,6 +21,7 @@
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha/css/bootstrap.css" rel="stylesheet">
    
 </head>
 <body>
@@ -40,7 +43,6 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav mr-auto">
-
                     <li class="nav-item">
                     <a class="nav-link" href="{{url('about')}}">About</a>
                     </li>
@@ -57,7 +59,7 @@
                     <a class="nav-link" href="{{url('process')}}">Process</a>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link" href="{{ route('projects.index') }}" :active="request()->routeIs('projects.*')">AGILECRUD</a>
+                    <a class="nav-link" href="{{ url('projects') }}">AGILECRUD</a>
                     </li>
 
                     </ul>
@@ -96,7 +98,7 @@
                 </div>
             </div>
         </nav>
-
+        
         <main class="py-4">
             @yield('content')
         </main>
