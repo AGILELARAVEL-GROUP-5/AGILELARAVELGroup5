@@ -3,10 +3,6 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\DB;
-use App\Profile;
-use App\user;
-use Auth;
 
 class HomeController extends Controller
 {
@@ -25,15 +21,8 @@ class HomeController extends Controller
      *
      * @return \Illuminate\Contracts\Support\Renderable
      */
-    public function index()
+    public function home()
     {
-        $user = Auth::user()->id;
-        $profile = DB::table('users')
-                    ->select('users.*')
-                    ->where(['users.id' => $user])
-                    ->first();
-        return view('home',['profile' => $profile]);
+        return view('home');
     }
-    
-  
 }

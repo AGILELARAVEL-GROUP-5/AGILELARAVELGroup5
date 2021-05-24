@@ -10,6 +10,7 @@ class AGILEController extends Controller
 
         return view('about');
     }
+   
     public function method(){
 
         return view('method');
