@@ -3,8 +3,8 @@
 @section('content')
 <div class="container">
     <div class="row justify-content-center">
-        <div class="col-xl-10 border border-dark">
-            <div class="card">
+        <div class="col-xl-10">
+            <div class="card border border-dark rounded">
                 <div class="card-header">
                 <h2>{{ __('Login') }}</h2>
                 </div>
