@@ -4,8 +4,10 @@
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-xl-10">
-            <div class="card">
-                <div class="card-header">{{ __('Verify Your Email Address') }}</div>
+            <div class="card border-dark rounded">
+                <div class="card-header h2 bg-info">
+                    Verify Your Email Address
+                </div>
 
                 <div class="card-body">
                     @if (session('resent'))
