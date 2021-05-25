@@ -121,7 +121,7 @@ position: relative;
             </div>
         </nav>
         
-        <main class="py-4 bg-primary">
+        <main class="py-4 px-4 bg-primary">
             @yield('content')
         </main>
 
