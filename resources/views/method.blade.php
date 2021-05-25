@@ -4,10 +4,10 @@
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-xl-10">
-            <div class="card">
-                <div class="card-header">
+            <div class="card border-dark rounded">
+                <div class="card-header h1 bg-info">
                 
-                <h1>Methodology</h1>
+                    Methodology
                 
                 </div>
                 
