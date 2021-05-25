@@ -21,16 +21,30 @@
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha/css/bootstrap.css" rel="stylesheet">
+    
+<style>
+
+p {
+text-align: justify;
+text-justify: inter-word;
+}
+
+.crud {
+width: 100%;
+height: 1000px;
+position: relative;
+}
+
+</style>
    
 </head>
 <body>
 
-<div class="jumbotron text-center" style="margin-bottom:0">
-  <h1>The AGILE Development Framework</h1>
-</div>
-
     <div id="app">
+      <div class="jumbotron text-center" style="margin-bottom:0">
+         <h1>The AGILE Development Framework</h1>
+      </div>
+        
         <nav class="navbar navbar-expand-md navbar-dark bg-dark shadow-sm">
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}">
@@ -43,7 +57,7 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav mr-auto">
-                   
+                
 
                     </ul>
                   <!-- Right Side Of Navbar -->
@@ -63,25 +77,26 @@
 
                              -->
                         @else
-                        
-                    <li class="nav-item">
-                    <a class="nav-link" href="{{ url('projects') }}">AGILECRUD</a>
-                    </li>
-                    <li class="nav-item">
-                    <a class="nav-link" href="{{url('about')}}">About</a>
-                    </li>
-                    <li class="nav-item">
-                    <a class="nav-link" href="{{url('method')}}">Methodology</a>
-                    </li>
-                    <li class="nav-item">
-                     <a class="nav-link" href="{{url('stages')}}">Stages</a>
-                    </li>
-                    <li class="nav-item">
-                    <a class="nav-link" href="{{url('principle')}}">Principle</a>
-                    </li>
-                    <li class="nav-item">
-                    <a class="nav-link" href="{{url('process')}}">Process</a>
-                    </li>
+                         <!--                      
+                            <li class="nav-item">
+                                <a class="nav-link" href="{{ url('projects') }}">AGILECRUD</a>
+                            </li>
+                        -->
+                         <li class="nav-item active">
+                             <a class="nav-link" href="{{url('about')}}">About</a>
+                         </li>
+                         <li class="nav-item">
+                             <a class="nav-link" href="{{url('method')}}">Methodology</a>
+                        </li>
+                         <li class="nav-item">
+                             <a class="nav-link" href="{{url('stages')}}">Stages</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{url('principle')}}">Principle</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="{{url('process')}}">Process</a>
+                        </li>
                    
                             <li class="nav-item dropdown">
                                 <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
@@ -110,12 +125,11 @@
             @yield('content')
         </main>
 
-     
+        <div class="jumbotron text-center" style="margin-bottom:0">
+              <h5>© Copyright 2021</h5>
+        </div>
+  
     </div>
-    <div class="jumbotron text-center">
-              <p>© Copyright 2021</p>
-    </div>
-
 
 </body>
 </html>
