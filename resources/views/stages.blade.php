@@ -4,10 +4,11 @@
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-xl-10">
-            <div class="card">
-                <div class="card-header">
-                <h1>Stages</h1>
+            <div class="card border-dark rounded">
+                <div class="card-header h1 bg-info">
+                    Stages
                 </div>
+
                 <div class="card-body">
                     @if (session('status'))
                         <div class="alert alert-success" role="alert">
@@ -103,6 +104,7 @@ the deployment is called the full-fledged product deployment.
     <div class = "text-center">
     <img src="{{asset('/images/waterprocesslifecycle.jpg')}}"  class="img-fluid" >
     </div>
+    <br>
                 </div>
             </div>
         </div>
