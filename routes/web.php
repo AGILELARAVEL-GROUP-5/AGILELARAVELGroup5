@@ -21,14 +21,18 @@ Route::get('/method',[App\Http\Controllers\AGILEController::class,'method']);
 Route::get('/stages',[App\Http\Controllers\AGILEController::class,'stages']);
 Route::get('/principle',[App\Http\Controllers\AGILEController::class,'principle']);
 Route::get('/process',[App\Http\Controllers\AGILEController::class,'process']);
-*/
 
 Auth::routes();
 Route::get('/', [App\Http\Controllers\HomeController::class, 'home'])->name('home');
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'home'])->name('home');
+*/
 
+Auth::routes();
+
+Route::get('/home', 'HomeController@home')->name('home');
 
 Route::group(['middleware' => 'auth'], function(){
+    Route::resource('/', 'ProjectController');
     Route::resource('projects', 'ProjectController');
     Route::get('/about', [App\Http\Controllers\AGILEController::class, 'about'])->name('about');
     Route::get('/method', [App\Http\Controllers\AGILEController::class, 'method'])->name('method');
