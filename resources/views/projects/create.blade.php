@@ -4,9 +4,9 @@
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-xl-10">
-            <div class="card">
-                <div class="card-header">
-                <h1>AGILE CRUD</h1>
+            <div class="card border-dark rounded">
+                <div class="card-header h1 bg-info">
+                    AGILE CRUD
                 </div>
          
                 <div class="card-body">
@@ -20,8 +20,8 @@
 
     <div class="row">
         <div class="col-lg-12 margin-tb">
-            <div class="float-left">
-                <h2>Add AGILE</h2>
+            <div class="float-left h2">
+                Add AGILE
             </div>
             <div class="float-right">
                 <a class="btn btn-primary" href="{{ route('projects.index') }}" title="Go back"> <i class="fas fa-backward "></i> </a>
