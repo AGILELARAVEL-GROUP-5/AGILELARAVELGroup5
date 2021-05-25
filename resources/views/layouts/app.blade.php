@@ -31,7 +31,7 @@ text-justify: inter-word;
 
 .crud {
 width: 100%;
-height: 1000px;
+height: 100%;
 position: relative;
 }
 
@@ -121,7 +121,7 @@ position: relative;
             </div>
         </nav>
         
-        <main class="py-4">
+        <main class="py-4 bg-dark">
             @yield('content')
         </main>
 
