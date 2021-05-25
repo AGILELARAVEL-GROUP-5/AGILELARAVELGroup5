@@ -4,7 +4,7 @@
 
 <div class="container">
     <div class="row justify-content-center">
-        <div class="col-md-8">
+        <div class="col-xl-10">
             <div class="card">
                 <div class="card-header">
                 <h1>AGILE CRUD</h1>
@@ -19,10 +19,10 @@
 
     <div class="row">
         <div class="col-lg-12 margin-tb">
-            <div class="pull-left">
+            <div class="float-left">
                 <h2>Edit AGILE</h2>
             </div>
-            <div class="pull-right">
+            <div class="float-right">
                 <a class="btn btn-primary" href="{{ route('projects.index') }}" title="Go back"> <i class="fas fa-backward "></i> </a>
             </div>
         </div>

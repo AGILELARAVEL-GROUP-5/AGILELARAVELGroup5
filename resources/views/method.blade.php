@@ -3,7 +3,7 @@
 @section('content')
 <div class="container">
     <div class="row justify-content-center">
-        <div class="col-md-8">
+        <div class="col-xl-10">
             <div class="card">
                 <div class="card-header">
                 
@@ -58,9 +58,9 @@
 
     <br>
     
-   
-      <img src="{{asset('/images/waterfallprocess.jpg')}}" style="height: 100%; width: 100%; position: relative;">
-    
+    <div class="text-center">
+      <img src="{{asset('/images/waterfallprocess.jpg')}}"  class="img-fluid"  >
+    </div>
      
       <br>
 
