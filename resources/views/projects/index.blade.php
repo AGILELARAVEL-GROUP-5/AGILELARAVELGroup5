@@ -5,9 +5,9 @@
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-xl-10">
-            <div class="card">
-                <div class="card-header">
-                <h1>AGILE CRUD</h1>
+            <div class="card border-dark rounded">
+                <div class="card-header h1 bg-info">
+                    AGILE CRUD 
                 </div>
          
                 <div class="card-body crud">
