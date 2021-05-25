@@ -24,12 +24,7 @@
     
 <style>
 
-p , ul{
-text-align: justify;
-text-justify: inter-word;
-font-weight: bold;
-font-size: large;
-}
+
 
 .crud {
 width: 100%;
@@ -45,14 +40,14 @@ position: relative;
 
 <body>
 
-    <div id="app">
-      <div class="jumbotron text-center" style="margin-bottom:0">
-         <h1>The AGILE Development Framework</h1>
+    <div id="app" class="text-justify">
+      <div class="jumbotron text-center h1 font-weight-bold" style="margin-bottom:0">
+         The AGILE Development Framework
       </div>
         
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
             <div class="container">
-                <a class="navbar-brand text-primary" href="{{ url('/') }}" style="font-weight: bold;">
+                <a class="navbar-brand text-primary font-weight-bold" href="{{ url('/') }}">
                     AGILE
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
@@ -66,7 +61,7 @@ position: relative;
 
                     </ul>
                   <!-- Right Side Of Navbar -->
-                  <ul class="navbar-nav ml-auto">
+                  <ul class="navbar-nav ml-auto font-weight-bold">
                         <!-- Authentication Links -->
                         @guest
                             <li class="nav-item">
@@ -130,8 +125,8 @@ position: relative;
             @yield('content')
         </main>
 
-        <div class="jumbotron text-center" style="margin-bottom:0">
-              <h5>© Copyright 2021</h5>
+        <div class="jumbotron text-center h5 font-weight-bold" style="margin-bottom:0">
+            © Copyright 2021
         </div>
   
     </div>
