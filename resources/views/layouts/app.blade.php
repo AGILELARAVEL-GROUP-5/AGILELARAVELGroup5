@@ -65,7 +65,7 @@ position: relative;
                         <!-- Authentication Links -->
                         @guest
                             <li class="nav-item">
-                                <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
+                                <a class="nav-link text-primary font-weight-bold" href="{{ route('login') }}"> Login </a>
                             </li>
             
                             <!--
@@ -83,19 +83,19 @@ position: relative;
                             </li>
                         -->
                          <li class="nav-item">
-                             <a class="nav-link text-primary" href="{{url('about')}}">About</a>
+                             <a class="nav-link text-primary font-weight-bold" href="{{url('about')}}">About</a>
                          </li>
                          <li class="nav-item">
-                             <a class="nav-link text-primary" href="{{url('method')}}">Methodology</a>
+                             <a class="nav-link text-primary font-weight-bold" href="{{url('method')}}">Methodology</a>
                         </li>
                          <li class="nav-item">
-                             <a class="nav-link text-primary" href="{{url('stages')}}">Stages</a>
+                             <a class="nav-link text-primary font-weight-bold" href="{{url('stages')}}">Stages</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-primary" href="{{url('principle')}}">Principle</a>
+                            <a class="nav-link text-primary font-weight-bold" href="{{url('principle')}}">Principle</a>
                         </li>
                         <li class="nav-item">
-                          <a class="nav-link text-primary" href="{{url('process')}}">Process</a>
+                          <a class="nav-link text-primary font-weight-bold" href="{{url('process')}}">Process</a>
                         </li>
                    
                             <li class="nav-item dropdown">
@@ -121,7 +121,7 @@ position: relative;
             </div>
         </nav>
         
-        <main class="py-4 px-4 bg-primary">
+        <main class="py-3 px-3 bg-primary">
             @yield('content')
         </main>
 
