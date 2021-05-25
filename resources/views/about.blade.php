@@ -9,7 +9,7 @@
                         About
                 </div>
                 
-                <div class="card-body h6">
+                <div class="card-body h5">
                     @if (session('status'))
                         <div class="alert alert-success" role="alert">
                             {{ session('status') }}
