@@ -4,7 +4,7 @@
 
 <div class="container">
     <div class="row justify-content-center">
-        <div class="col-md-8">
+        <div class="col-xl-10">
             <div class="card">
                 <div class="card-header">
                 <h1>AGILE CRUD</h1>
@@ -22,7 +22,7 @@
     <div class="row">
         <div class="col-lg-12 margin-tb">
            
-            <div class="pull-right">
+            <div class="float-right">
                 <a class="btn btn-success" href="{{ route('projects.create') }}" title="Create a project"> <i class="fas fa-plus-circle"></i>
                     </a>
             </div>
@@ -35,14 +35,14 @@
         </div>
     @endif
 
-    <table class="table table-bordered table-responsive-lg">
+    <table class="table table-bordered table-striped">
         <tr>
-            <th>No</th>
-            <th>Title</th>
-            <th>Introduction</th>
-            <th>Location</th>
-            <th>Date Created</th>
-            <th>Action</th>
+            <th scope="col">No</th>
+            <th scope="col">Title</th>
+            <th scope="col">Introduction</th>
+            <th scope="col">Location</th>
+            <th scope="col">Date Created</th>
+            <th scope="col">Action</th>
         </tr>
         @foreach ($projects as $project)
             <tr>

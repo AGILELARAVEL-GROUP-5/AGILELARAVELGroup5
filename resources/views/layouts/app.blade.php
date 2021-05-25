@@ -24,20 +24,25 @@
     
 <style>
 
-p {
+p , ul{
 text-align: justify;
 text-justify: inter-word;
+font-weight: bold;
+font-size: large;
 }
 
 .crud {
 width: 100%;
 height: 100%;
+font-size: large;
 position: relative;
 }
 
 </style>
    
 </head>
+
+
 <body>
 
     <div id="app">
@@ -45,9 +50,9 @@ position: relative;
          <h1>The AGILE Development Framework</h1>
       </div>
         
-        <nav class="navbar navbar-expand-md navbar-dark bg-dark shadow-sm">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
             <div class="container">
-                <a class="navbar-brand" href="{{ url('/') }}">
+                <a class="navbar-brand text-primary" href="{{ url('/') }}" style="font-weight: bold;">
                     AGILE
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
@@ -82,20 +87,20 @@ position: relative;
                                 <a class="nav-link" href="{{ url('projects') }}">AGILECRUD</a>
                             </li>
                         -->
-                         <li class="nav-item active">
-                             <a class="nav-link" href="{{url('about')}}">About</a>
+                         <li class="nav-item">
+                             <a class="nav-link text-primary" href="{{url('about')}}">About</a>
                          </li>
                          <li class="nav-item">
-                             <a class="nav-link" href="{{url('method')}}">Methodology</a>
+                             <a class="nav-link text-primary" href="{{url('method')}}">Methodology</a>
                         </li>
                          <li class="nav-item">
-                             <a class="nav-link" href="{{url('stages')}}">Stages</a>
+                             <a class="nav-link text-primary" href="{{url('stages')}}">Stages</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="{{url('principle')}}">Principle</a>
+                            <a class="nav-link text-primary" href="{{url('principle')}}">Principle</a>
                         </li>
                         <li class="nav-item">
-                          <a class="nav-link" href="{{url('process')}}">Process</a>
+                          <a class="nav-link text-primary" href="{{url('process')}}">Process</a>
                         </li>
                    
                             <li class="nav-item dropdown">
@@ -121,7 +126,7 @@ position: relative;
             </div>
         </nav>
         
-        <main class="py-4 bg-dark">
+        <main class="py-4 bg-info">
             @yield('content')
         </main>
 

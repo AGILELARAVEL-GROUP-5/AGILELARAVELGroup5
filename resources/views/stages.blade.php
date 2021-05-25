@@ -3,7 +3,7 @@
 @section('content')
 <div class="container">
     <div class="row justify-content-center">
-        <div class="col-md-8">
+        <div class="col-xl-10">
             <div class="card">
                 <div class="card-header">
                 <h1>Stages</h1>
@@ -100,8 +100,8 @@ the deployment is called the full-fledged product deployment.
 
     <h3>The Agile development methodology lifecycle? </h3>
     <br>
-    <div>
-    <img src="{{asset('/images/waterprocesslifecycle.jpg')}}" style="height: 100%; width: 100%; position: relative;">
+    <div class = "text-center">
+    <img src="{{asset('/images/waterprocesslifecycle.jpg')}}"  class="img-fluid" >
     </div>
                 </div>
             </div>

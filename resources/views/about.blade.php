@@ -3,7 +3,7 @@
 @section('content')
 <div class="container">
     <div class="row justify-content-center">
-        <div class="col-md-8">
+        <div class="col-xl-10">
             <div class="card">
                 <div class="card-header">
 
@@ -38,8 +38,10 @@
       development life cycle over the years while defying the golden hammer bias 
       related to the Waterfall methodology, which leads to piling technical debts.
       </p>
+                    <div class="text-center">
+                    <img src="{{asset('/images/waterprocess.jpg')}}" class="img-fluid" >
+                    </div>
 
-      <img src="{{asset('/images/waterprocess.jpg')}}" style="height: 100%; width: 100%; position: relative;">
 
                 </div>
             </div>
