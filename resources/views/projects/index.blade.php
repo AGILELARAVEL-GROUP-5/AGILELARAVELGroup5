@@ -10,7 +10,7 @@
                 <h1>AGILE CRUD</h1>
                 </div>
          
-                <div class="card-body">
+                <div class="card-body crud">
                     @if (session('status'))
                         <div class="alert alert-success" role="alert">
                             {{ session('status') }}
@@ -42,7 +42,7 @@
             <th>Introduction</th>
             <th>Location</th>
             <th>Date Created</th>
-            <th style="position: relative;">Action</th>
+            <th>Action</th>
         </tr>
         @foreach ($projects as $project)
             <tr>
