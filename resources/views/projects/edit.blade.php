@@ -47,20 +47,20 @@
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
                     <strong>Title:</strong>
-                    <input type="text" name="title" value="{{ $project->title }}" class="form-control" placeholder="Title">
+                    <input type="text" name="title" value="{{ $project->title }}" class="form-control" style="height:55px" placeholder="Title">
                 </div>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
                     <strong>Introduction:</strong>
-                    <textarea class="form-control" style="height:50px" name="introduction"
+                    <textarea class="form-control" style="height:75px" name="introduction"
                         placeholder="Introduction">{{ $project->introduction }}</textarea>
                 </div>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
                     <strong>Location:</strong>
-                    <input type="text" name="location" class="form-control" placeholder="{{ $project->location }}"
+                    <input type="text" name="location" class="form-control" style="height:55px" placeholder="{{ $project->location }}"
                         value="{{ $project->location }}">
                 </div>
             </div>
