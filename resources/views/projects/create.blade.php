@@ -46,25 +46,25 @@
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
                     <strong>Title:</strong>
-                    <input type="text" name="title" class="form-control" placeholder="Title">
+                    <input type="text" name="title"  style="height:55px;" class="form-control" placeholder="Title">
                 </div>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
                     <strong>Introduction:</strong>
-                    <textarea class="form-control" style="height:50px" name="introduction"
+                    <textarea class="form-control" style="height:75px;" name="introduction"
                         placeholder="Introduction"></textarea>
                 </div>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
                     <strong>Location:</strong>
-                    <input type="text" name="location" class="form-control" placeholder="Location">
+                    <input type="text" name="location" class="form-control" style="height:55px;" placeholder="Location">
                 </div>
             </div>
          
             <div class="col-xs-12 col-sm-12 col-md-12 text-center">
-                <button type="submit" class="btn btn-primary">Submit</button>
+                <button type="submit"style="width:100%;" class="btn btn-primary">Submit</button>
             </div>
         </div>
 
