@@ -9,7 +9,7 @@
                     Login
                 </div>
 
-                <div class="card-body">
+                <div class="card-body font-weight-bold h5">
                     <form method="POST" action="{{ route('login') }}">
                         @csrf
 
@@ -17,7 +17,7 @@
                             <label for="login" class="col-md-4 col-form-label text-md-right">{{ __('Email Address') }}</label>
 
                             <div class="col-md-6">
-                                <input id="login" type="text" class="form-control {{ $errors->has('username') || $errors->has('email') ? 'is-invalid' : '' }}" name="login" value="{{ old('username') ?: old('email')  }}" required  autofocus>
+                                <input id="login" type="text" style ="height:55px;" class="form-control {{ $errors->has('username') || $errors->has('email') ? 'is-invalid' : '' }}" name="login" value="{{ old('username') ?: old('email')  }}" required  autofocus>
 
                                 @if( $errors->has('username') || $errors->has('email') )
                                     <span class="invalid-feedback" role="alert">
@@ -32,7 +32,7 @@
                             <label for="password" class="col-md-4 col-form-label text-md-right">{{ __('Password') }}</label>
 
                             <div class="col-md-6">
-                                <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="current-password">
+                                <input id="password" type="password" style ="height:55px;" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="current-password">
 
                                 @error('password')
                                     <span class="invalid-feedback" role="alert">
