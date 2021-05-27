@@ -20,7 +20,7 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-   
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet">
    
 </head>
 
@@ -33,7 +33,7 @@
         
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
             <div class="container">
-                <a class="navbar-brand text-primary font-weight-bolder" href="{{ url('/') }}">
+                <a class="navbar-brand text-info font-weight-bolder" href="{{ url('/') }}">
                     AGILE
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
@@ -51,7 +51,7 @@
                         <!-- Authentication Links -->
                         @guest
                             <li class="nav-item">
-                                <a class="nav-link text-primary font-weight-bolder" href="{{ route('login') }}"> Login </a>
+                                <a class="nav-link text-info font-weight-bolder" href="{{ route('login') }}"> Login </a>
                             </li>
             
                             <!--
@@ -69,19 +69,19 @@
                             </li>
                         -->
                          <li class="nav-item">
-                             <a class="nav-link text-primary font-weight-bolder" href="{{url('about')}}">About</a>
+                             <a class="nav-link text-info font-weight-bolder" href="{{url('about')}}">About</a>
                          </li>
                          <li class="nav-item">
-                             <a class="nav-link text-primary font-weight-bolder" href="{{url('method')}}">Methodology</a>
+                             <a class="nav-link text-info font-weight-bolder" href="{{url('method')}}">Methodology</a>
                         </li>
                          <li class="nav-item">
-                             <a class="nav-link text-primary font-weight-bolder" href="{{url('stages')}}">Stages</a>
+                             <a class="nav-link text-info font-weight-bolder" href="{{url('stages')}}">Stages</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-primary font-weight-bolder" href="{{url('principle')}}">Principle</a>
+                            <a class="nav-link text-info font-weight-bolder" href="{{url('principle')}}">Principle</a>
                         </li>
                         <li class="nav-item">
-                          <a class="nav-link text-primary font-weight-bolder" href="{{url('process')}}">Process</a>
+                          <a class="nav-link text-info font-weight-bolder" href="{{url('process')}}">Process</a>
                         </li>
                    
                             <li class="nav-item dropdown">
