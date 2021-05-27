@@ -16,7 +16,6 @@
                         </div>
                     @endif
          
-          
 
     <div class="row">
         <div class="col-lg-12 margin-tb">
@@ -48,12 +47,7 @@
                 {{ $project->location }}
             </div>
         </div>
-        <div class="col-xs-12 col-sm-12 col-md-12">
-            <div class="form-group">
-                <strong>Date Created:</strong>
-                {{ date_format($project->created_at, 'jS M Y') }}
-            </div>
-        </div>
+        
     </div>
 
 
