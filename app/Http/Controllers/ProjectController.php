@@ -15,10 +15,10 @@ class ProjectController extends Controller
      */
     public function index()
     {
-        $projects = Project::latest()->paginate(5);
+        $projects = Project::all();
 
         return view('projects.index', compact('projects'))
-            ->with('i', (request()->input('page', 1) - 1) * 5);
+            ->with('i');
     }
 
     /**
