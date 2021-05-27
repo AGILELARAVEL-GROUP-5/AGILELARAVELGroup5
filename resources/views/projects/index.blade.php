@@ -6,7 +6,7 @@
     <div class="row justify-content-center">
         <div class="col-xl-10">
             <div class="card border-dark rounded">
-                <div class="card-header h1 bg-info">
+                <div class="card-header h1 font-weight-bolder bg-info">
                     AGILE CRUD 
                 </div>
          
@@ -35,10 +35,10 @@
         </div>
     @endif
 
- <table class="table table-bordered">
+ <table class="table table-bordered table-dark">
 
-    <thead class="thead-dark">
-        <tr>
+    <thead>
+        <tr class="bg-danger">
             <th scope="col">No</th>
             <th scope="col">Title</th>
             <th scope="col">Introduction</th>
