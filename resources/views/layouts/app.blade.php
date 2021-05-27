@@ -21,20 +21,8 @@
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
    
-    
-<style>
-
-.crud {
-width: 100%;
-height: 100%;
-font-size: large;
-position: relative;
-}
-
-</style>
    
 </head>
-
 
 <body>
 
