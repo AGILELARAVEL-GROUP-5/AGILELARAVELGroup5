@@ -5,7 +5,7 @@
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-xl-10">
-            <div class="card border-dark rounded">
+            <div class="card border border-dark border-5">
                 <div class="card-header h1 font-weight-bolder bg-info">
                     AGILE CRUD 
                 </div>
@@ -35,15 +35,15 @@
         </div>
     @endif
 
- <table class="table table-bordered table-dark">
+ <table class="table">
 
     <thead>
-        <tr class="bg-danger">
-            <th scope="col">No</th>
-            <th scope="col">Title</th>
-            <th scope="col">Introduction</th>
-            <th scope="col">Location</th>
-            <th scope="col">Action</th>
+        <tr class="table-warning">
+            <th class="border border-3 border-dark text-primary">No</th>
+            <th class="border border-3 border-dark text-primary">Title</th>
+            <th class="border border-3 border-dark text-primary">Introduction</th>
+            <th class="border border-3 border-dark text-primary">Location</th>
+            <th class="border border-3 border-dark text-primary">Action</th>
         </tr>
     </thead>
 
@@ -51,12 +51,12 @@
 
         @foreach ($projects as $project)
         
-            <tr>
-                <th scope="row">{{ ++$i }}</th>
-                <td>{{ $project->title }}</td>
-                <td>{{ $project->introduction }}</td>
-                <td>{{ $project->location }}</td>
-                <td>
+            <tr class="table-success">
+                <th class="border border-3 border-dark text-success" scope="row">{{ ++$i }}</th>
+                <td class="border border-3 border-dark text-success font-weight-bold">{{ $project->title }}</td>
+                <td class="border border-3 border-dark text-success font-weight-bold">{{ $project->introduction }}</td>
+                <td class="border border-3 border-dark text-success font-weight-bold">{{ $project->location }}</td>
+                <td class="border border-3 border-dark text-success font-weight-bold">
                     <form action="{{ route('projects.destroy', $project->id) }}" method="POST">
 
                         <a href="{{ route('projects.show', $project->id) }}" title="show">
