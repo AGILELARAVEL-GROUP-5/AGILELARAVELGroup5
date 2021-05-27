@@ -4,7 +4,7 @@
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-xl-10">
-            <div class="card border-dark rounded">
+            <div class="card  border border-dark border-5">
                 <div class="card-header h2 font-weight-bolder bg-info">
                     Confirm Password
                 </div>
