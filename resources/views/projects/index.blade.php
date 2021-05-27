@@ -10,7 +10,7 @@
                     AGILE CRUD 
                 </div>
          
-                <div class="card-body crud">
+                <div class="card-body bg-warning">
                     @if (session('status'))
                         <div class="alert alert-success" role="alert">
                             {{ session('status') }}
@@ -35,22 +35,27 @@
         </div>
     @endif
 
-    <table class="table table-bordered table-striped">
+ <table class="table table-bordered">
+
+    <thead class="thead-dark">
         <tr>
             <th scope="col">No</th>
             <th scope="col">Title</th>
             <th scope="col">Introduction</th>
             <th scope="col">Location</th>
-            <th scope="col">Date Created</th>
             <th scope="col">Action</th>
         </tr>
+    </thead>
+
+    <tbody>
+
         @foreach ($projects as $project)
+        
             <tr>
-                <td>{{ ++$i }}</td>
+                <th scope="row">{{ ++$i }}</th>
                 <td>{{ $project->title }}</td>
                 <td>{{ $project->introduction }}</td>
                 <td>{{ $project->location }}</td>
-                <td>{{ date_format($project->created_at, 'jS M Y') }}</td>
                 <td>
                     <form action="{{ route('projects.destroy', $project->id) }}" method="POST">
 
@@ -68,15 +73,17 @@
 
                         <button type="submit" title="delete" style="border: none; background-color:transparent;">
                             <i class="fas fa-trash fa-lg text-danger"></i>
-
                         </button>
                     </form>
                 </td>
             </tr>
         @endforeach
-    </table>
+        
+    </tbody>
 
-    {!! $projects->links() !!}
+</table>
+
+    
                
                 </div>
              </div>
