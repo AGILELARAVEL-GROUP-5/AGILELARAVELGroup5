@@ -5,7 +5,7 @@
     <div class="row justify-content-center">
         <div class="col-xl-10">
             <div class="card border-dark rounded">
-                <div class="card-header h1 bg-info">
+                <div class="card-header h1 font-weight-bolder bg-info">
                     AGILE CRUD
                 </div>
          
@@ -19,7 +19,7 @@
 
     <div class="row">
         <div class="col-lg-12 margin-tb">
-            <div class="float-left h2">
+            <div class="float-left h2 font-weight-bolder">
                  {{ $project->title }} 
             </div>
             <div class="float-right">
@@ -28,7 +28,7 @@
         </div>
     </div>
 
-    <div class="row h5">
+    <div class="row h4">
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
                 <strong>Title:</strong>
