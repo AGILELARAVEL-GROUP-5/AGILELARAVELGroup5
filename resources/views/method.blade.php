@@ -19,7 +19,8 @@
                     @endif
 
                     <br>
-      <h3>What is Agile Development Methodology?</h3>
+      
+      <div class= "h3">What is Agile Development Methodology?</div>
       <br>
       <p>
        The Agile Development methodology is the innovative approach
