@@ -7,7 +7,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>AGILE</title>
+    <title> AGILE Blog</title>
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
@@ -21,7 +21,8 @@
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet">
-   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css">
+
 </head>
 
 <body>
@@ -68,6 +69,9 @@
                                 <a class="nav-link" href="{{ url('projects') }}">AGILECRUD</a>
                             </li>
                         -->
+                        <li class="nav-item">
+                             <a class="nav-link text-info font-weight-bolder" href="{{url('posts')}}">Post</a>
+                         </li>
                          <li class="nav-item">
                              <a class="nav-link text-info font-weight-bolder" href="{{url('about')}}">About</a>
                          </li>
