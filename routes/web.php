@@ -33,6 +33,7 @@ Route::get('/home', 'HomeController@home')->name('home');
 
 Route::group(['middleware' => 'auth'], function(){
     Route::resource('/', 'ProjectController');
+    Route::resource('posts', 'PostController');
     Route::resource('projects', 'ProjectController');
     Route::get('/about', [App\Http\Controllers\AGILEController::class, 'about'])->name('about');
     Route::get('/method', [App\Http\Controllers\AGILEController::class, 'method'])->name('method');
