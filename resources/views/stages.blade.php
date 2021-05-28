@@ -17,7 +17,7 @@
                     @endif
 
                     <br>
-      <h3>What are the Stages of Agile Development?</h3>
+      <div class="h3">What are the Stages of Agile Development?</div>
       <br>
       <p>
       The Agile Development lifecycle process follows the plan, code, test, deploy, and repeat model. 
@@ -99,7 +99,8 @@ the deployment is called the full-fledged product deployment.
 
     <br>
 
-    <h3>The Agile development methodology lifecycle? </h3>
+    <div class= "h3">The Agile development methodology lifecycle? </div>
+    
     <br>
     <div class = "text-center">
     <img src="{{asset('/images/waterprocesslifecycle.jpg')}}"  class="img-fluid" >
