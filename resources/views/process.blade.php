@@ -20,7 +20,7 @@
 
                     
       <br>
-      <h3>Processes Involved in Agile Development Methodology</h3>
+      <div class = "h3">Processes Involved in Agile Development Methodology</div>
       <br>
       <p>
       1. User Story Prioritization<br><br>
