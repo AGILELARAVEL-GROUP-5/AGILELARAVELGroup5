@@ -9,7 +9,16 @@
                     Login
                 </div>
 
-                <div class="card-body font-weight-bold h5">
+                <div class="card-body font-weight-bold h5" style="height: 500px;">
+            
+                <br>
+                <br>
+
+                <div class="h2 text-center font-weight-bold"> AGILE </div>
+
+                <br>
+                <br>
+        
                     <form method="POST" action="{{ route('login') }}">
                         @csrf
 
