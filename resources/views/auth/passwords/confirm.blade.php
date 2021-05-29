@@ -9,7 +9,7 @@
                     Confirm Password
                 </div>
 
-                <div class="card-body h5 font-weight-bold">
+                <div class="card-body h5 font-weight-bold" style="height: 500px;">
                     {{ __('Please confirm your password before continuing.') }}
 
                     <form method="POST" action="{{ route('password.confirm') }}">
