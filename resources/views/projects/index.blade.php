@@ -10,15 +10,20 @@
                     AGILE CRUD 
                 </div>
          
-                <div class="card-body bg-warning">
-                    @if (session('status'))
-                        <div class="alert alert-success" role="alert">
-                            {{ session('status') }}
-                        </div>
-                    @endif
-           
+                <div class="card-body">
 
+                <br>
 
+            <div class="text-center">
+                  <img src="{{asset('/images/agilelogo.png')}}"  class="img-fluid"  >
+            </div>
+
+                <br>
+                <br>
+
+                <div class="row justify-content-lg-center">          
+                        <div class="col-lg-11">
+                      
     <div class="row">
         <div class="col-lg-12 margin-tb">
            
@@ -82,8 +87,14 @@
     </tbody>
 
 </table>
-
     
+</div>
+</div>
+
+                <br>
+                <br>
+                <br>
+                <br>
                
                 </div>
              </div>
