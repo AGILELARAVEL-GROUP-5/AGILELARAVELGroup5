@@ -47,8 +47,7 @@ class ProjectController extends Controller
 
         Project::create($request->all());
 
-        return redirect()->route('projects.index')
-            ->with('success', 'AGILE created successfully.');
+        return redirect()->route('projects.index')->with('success', 'AGILE created successfully.');
     }
 
     /**
@@ -86,8 +85,8 @@ class ProjectController extends Controller
             'introduction' => 'required',
             'location' => 'required',
         ]);
-        $project->update($request->all());
 
+        $project->update($request->all());
         return redirect()->route('projects.index')
             ->with('success', 'AGILE updated successfully');
     }
