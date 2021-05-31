@@ -9,15 +9,18 @@
                     Login
                 </div>
 
-                <div class="card-body font-weight-bold h5" style="height: 500px;">
+                <div class="card-body font-weight-bold h5">
             
                 <br>
+
+                <div class="text-center">
+                    <img src="{{asset('/images/agilelogo.png')}}"  class="img-fluid"  >
+                </div>
+
+                <br>
                 <br>
 
-                <div class="h2 text-center font-weight-bold"> AGILE </div>
-
-                <br>
-                <br>
+             
         
                     <form method="POST" action="{{ route('login') }}">
                         @csrf
@@ -84,6 +87,11 @@
                             </div>
                         </div>
                     </form>
+
+                    <br>
+                    <br>
+        
+
                 </div>
             </div>
         </div>
