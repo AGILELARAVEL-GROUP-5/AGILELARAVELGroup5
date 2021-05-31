@@ -10,6 +10,16 @@
                 </div>
 
                 <div class="card-body h5 font-weight-bold">
+    
+                <br>
+
+                <div class="text-center">
+                    <img src="{{asset('/images/agilelogo.png')}}"  class="img-fluid">
+                </div>
+
+                <br>
+                <br>
+
                     <form method="POST" action="{{ route('register') }}">
                         @csrf
 
