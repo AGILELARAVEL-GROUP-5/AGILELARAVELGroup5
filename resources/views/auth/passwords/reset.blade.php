@@ -10,6 +10,23 @@
                 </div>
 
                 <div class="card-body h5 font-weight-bold">
+
+                
+                <br>
+
+                <div class="text-center">
+                    <img src="{{asset('/images/agilelogo.png')}}"  class="img-fluid"  >
+                </div>
+
+                <br>
+                <br>
+
+                    @if (session('status'))
+                        <div class="alert alert-success" role="alert">
+                            {{ session('status') }}
+                        </div>
+                    @endif
+                
                     <form method="POST" action="{{ route('password.update') }}">
                         @csrf
 
