@@ -15,7 +15,7 @@
                 <br>
 
                 <div class="text-center">
-                    <img src="{{asset('/images/agilelogo.png')}}"  class="img-fluid"  >
+                    <img src="{{asset('/images/agilelogo.png')}}"  class="img-fluid">
                 </div>
 
                 <br>
