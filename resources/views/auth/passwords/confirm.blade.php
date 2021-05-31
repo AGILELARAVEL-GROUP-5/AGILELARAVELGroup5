@@ -9,7 +9,25 @@
                     Confirm Password
                 </div>
 
-                <div class="card-body h5 font-weight-bold" style="height: 500px;">
+                <div class="card-body h5 font-weight-bold">
+
+                
+                <br>
+
+                <div class="text-center">
+                    <img src="{{asset('/images/agilelogo.png')}}"  class="img-fluid"  >
+                </div>
+
+                <br>
+                <br>
+
+                     @if (session('status'))
+                        <div class="alert alert-success" role="alert">
+                            {{ session('status') }}
+                        </div>
+                    @endif
+
+
                     {{ __('Please confirm your password before continuing.') }}
 
                     <form method="POST" action="{{ route('password.confirm') }}">
