@@ -11,8 +11,7 @@
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
-    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js"> </script>
-    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js"> </script>
+    <script src="https://kit.fontawesome.com/97e1971b8b.js"></script>
    
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
@@ -34,8 +33,8 @@
         
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
             <div class="container">
-                <a class="navbar-brand text-info font-weight-bolder" href="{{ url('/') }}">
-                    AGILE
+                <a class="navbar-brand" href="{{ url('/') }}">
+                    <div class = "h3 font-weight-bolder text-danger">AGILE</div>
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
@@ -106,13 +105,16 @@
                                 </div>
                             </li>
                         @endguest
+
                     </ul>
                 </div>
             </div>
         </nav>
         
         <main class="py-3 px-3 bg-primary">
+     
             @yield('content')
+
         </main>
 
         <div class="jumbotron text-center h5 font-weight-bold" style="margin-bottom:0">
