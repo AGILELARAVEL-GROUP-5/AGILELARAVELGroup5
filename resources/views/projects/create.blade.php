@@ -10,14 +10,20 @@
                 </div>
          
                 <div class="card-body">
-                    @if (session('status'))
-                        <div class="alert alert-success" role="alert">
-                            {{ session('status') }}
-                        </div>
-                    @endif
-       
-             
 
+                <br>
+
+                <div class="text-center">
+                    <img src="{{asset('/images/agilelogo.png')}}"  class="img-fluid"  >
+                </div>
+
+                <br>
+                <br>
+
+
+                <div class="row justify-content-lg-center">          
+                        <div class="col-lg-9">                  
+                   
     <div class="row">
         <div class="col-lg-12 margin-tb">
             <div class="float-left h2">
@@ -64,13 +70,18 @@
             </div>
          
             <div class="col-xs-12 col-sm-12 col-md-12 text-center">
-                <button type="submit"style="width:100%;" class="btn btn-primary">Submit</button>
+                <button type="submit" style="width:100%;" class="btn btn-primary">Submit</button>
             </div>
         </div>
 
     </form>
 
-        
+    
+</div>
+</div>
+
+                <br>
+                <br>
         
 
                  </div>
