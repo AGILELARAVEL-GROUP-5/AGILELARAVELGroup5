@@ -10,11 +10,7 @@
                 </div>
                 
                 <div class="card-body h5">
-                    @if (session('status'))
-                        <div class="alert alert-success" role="alert">
-                            {{ session('status') }}
-                        </div>
-                    @endif
+            
 
       <p>
       According to the State of Agile Report 2020, 95% of the respondents 
