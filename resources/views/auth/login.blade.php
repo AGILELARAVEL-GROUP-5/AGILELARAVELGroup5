@@ -33,7 +33,7 @@
 
                                 @if( $errors->has('username') || $errors->has('email') )
                                     <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $errors->first('username') ?: $errors->first('email') }}</strong>
+                                        <strong class ="text-danger">{{ $errors->first('username') ?: $errors->first('email') }}</strong>
                                     </span>
                                 @endif
                                 
