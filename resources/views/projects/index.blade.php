@@ -22,13 +22,14 @@
                 <br>
 
                 <div class="row justify-content-lg-center">          
-                        <div class="col-lg-11">
+                        <div class="col-lg-10">
                       
     <div class="row">
         <div class="col-lg-12 margin-tb">
            
             <div class="float-right">
-                <a class="btn btn-success" href="{{ route('projects.create') }}" title="Create a project"> <i class="fas fa-plus-circle"></i>
+                <a class="btn btn-success" href="{{ route('projects.create') }}" title="Create a project">
+                         <i class="fas fa-plus-circle"></i>
                     </a>
             </div>
         </div>
@@ -40,7 +41,7 @@
         </div>
     @endif
 
- <table class="table">
+ <table class="table  table-responsive-lg">
 
     <thead>
         <tr class="table-warning">
@@ -61,23 +62,22 @@
                 <td class="border border-3 border-dark text-success font-weight-bold">{{ $project->title }}</td>
                 <td class="border border-3 border-dark text-success font-weight-bold">{{ $project->introduction }}</td>
                 <td class="border border-3 border-dark text-success font-weight-bold">{{ $project->location }}</td>
-                <td class="border border-3 border-dark text-success font-weight-bold">
+                <td class="border border-3 border-dark">
                     <form action="{{ route('projects.destroy', $project->id) }}" method="POST">
 
                         <a href="{{ route('projects.show', $project->id) }}" title="show">
-                            <i class="fas fa-eye text-success  fa-lg"></i>
+                        <i class="fas fa-eye text-success  fa-lg"></i>
                         </a>
 
                         <a href="{{ route('projects.edit', $project->id) }}">
-                            <i class="fas fa-edit  fa-lg"></i>
-
+                        <i class="fas fa-edit  fa-lg"></i>
                         </a>
 
                         @csrf
                         @method('DELETE')
 
-                        <button type="submit" title="delete" style="border: none; background-color:transparent;">
-                            <i class="fas fa-trash fa-lg text-danger"></i>
+                        <button type="submit" style="border: none; background-color:transparent;" title="delete">
+                        <i class="fas fa-trash fa-lg text-danger"></i>
                         </button>
                     </form>
                 </td>
