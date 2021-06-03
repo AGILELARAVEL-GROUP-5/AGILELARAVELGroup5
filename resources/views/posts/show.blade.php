@@ -28,8 +28,15 @@
                         <div class="col-lg-9">    
 
 
+
+                        @if (session('notification'))
+                        <div class="alert alert-info">
+                            {{ session('notification') }}
+                        </div>
+                @endif
+
                 <div class="row">
-                        <div class="col-lg-12 margin-tb">
+                        <div class="col-lg-12 margin-tb clearfix">
 
                         <div class="float-left">
                                 <a class="btn btn-link" href="{{ route('posts.index') }}"> 
@@ -49,36 +56,31 @@
                 <br>
                          
 
-                <div class="content">
+                                <a href="{{ route('posts.show', [$post->slug]) }}">
+                                    <div class = "h1 font-weight-bolder" >{{ $post->title }} </div>
+                                </a>
 
-                <a href="{{ route('posts.show', [$post->slug]) }}">
-                         <h1 class="title">{{ $post->title }}</h1>
-                </a>
                     <p><b>Posted:</b> {{ $post->created_at->diffForHumans() }}</p>
                     <p><b>Category:</b> {{ $post->category }}</p>
                     <p><b>Content:</b> {{ $post->content }}</p>
 
-                <form method="post" action="{{ route('posts.destroy', $post) }}">
-                
+            <form method="post" action="{{ route('posts.destroy', $post) }}">
+
                 @csrf
                 @method('delete')
-                    <div class="field is-grouped">
-                        <div class="control">
-                            <a href="{{ route('posts.edit', $post) }}" class="button is-info is-outlined">
-                                Edit
-                            </a>
-                        </div>
+                    
+                <a href="{{ route('posts.edit', $post) }}" class="btn btn-outline-info">
+                     Edit
+                </a>
+                <button type="submit" class="btn btn-outline-danger">Delete</button>
+                   
+            </form>
 
-                        <div class="control">
-                            <button type="submit" class="button is-danger is-outlined">Delete</button>
-                        </div>
-                    </div>
-                </form>
+            <br>
+            <br>
 
-        
-            </div>
-        </div>
     </div>
+</div>
 
 
                 <br>
