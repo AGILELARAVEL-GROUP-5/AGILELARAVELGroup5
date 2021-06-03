@@ -32,7 +32,9 @@
                     Edit AGILE
             </div>
             <div class="float-right">
-                <a class="btn btn-primary" href="{{ route('projects.index') }}" title="Go back"> <i class="fas fa-backward "></i> </a>
+                <a class="btn btn-primary" href="{{ route('projects.index') }}" title="Go back"> 
+                        <i class="fas fa-backward"></i>
+                 </a>
             </div>
         </div>
     </div>
