@@ -27,7 +27,7 @@
                         <div class="col-lg-9">                    
 
                 <div class="row">
-                        <div class="col-lg-12 margin-tb">
+                        <div class="col-lg-12 margin-tb clearfix">
 
                         <div class="float-left">
                                 <a class="btn btn-link" href="{{ route('posts.index') }}"> 
@@ -49,14 +49,14 @@
 
                    
 
-<h1 class="title">Edit: {{ $post->title }}</h1>
+<div class="h1 font-weight-bolder">Edit: {{ $post->title }}</div>
 
 <form method="post" action="{{ route('posts.update', $post) }}">
 
     @csrf
     @method('patch')
     @if ($errors->any())
-    <div class="notification is-danger">
+    <div class="alert alert-danger">
         <ul>
             @foreach ($errors->all() as $error)
                 <li>{{ $error }}</li>
@@ -66,40 +66,35 @@
     @endif
 
 
-    <div class="field">
-        <label class="label">Title</label>
-        <div class="control">
-            <input type="text" name="title" value="{{ $post->title }}" class="input" placeholder="Title" minlength="5" maxlength="100" required />
-        </div>
+    <div class="form-group">
+        <label>Title</label>
+    
+            <input type="text" name="title" value="{{ $post->title }}" class="form-control" placeholder="Title" minlength="5" maxlength="100" required />
+     
     </div>
 
-    <div class="field">
-        <label class="label">Content</label>
-        <div class="control">
-            <textarea name="content" class="textarea" placeholder="Content" minlength="5" maxlength="2000" required rows="10">{{ $post->content }}</textarea>
-        </div>
+    <div class="form-group">
+        <label>Content</label>
+            <textarea name="content" class="form-control" placeholder="Content" minlength="5" maxlength="2000" required rows="10">{{ $post->content }}</textarea>
+       
     </div>
 
-    <div class="field">
-        <label class="label">Category</label>
-        <div class="control">
-            <div class="select">
-                <select name="category" required>
+    <div class="form-group">
+        <label>Category</label>
+ 
+                <select class="form-select" name="category" required>
                     <option value="" disabled selected>Select category</option>
                     <option value="html" {{ $post->category === 'html' ? 'selected' : null }}>HTML</option>
                     <option value="css" {{ $post->category === 'css' ? 'selected' : null }}>CSS</option>
                     <option value="javascript" {{ $post->category === 'javascript' ? 'selected' : null }}>JavaScript</option>
                     <option value="php" {{ $post->category === 'php' ? 'selected' : null }}>PHP</option>
-                </select>
-            </div>
-        </div>
+                </select> 
     </div>
 
-    <div class="field">
-        <div class="control">
-            <button type="submit"  style="width:100%;" class="button is-link is-outlined">Update</button>
-        </div>
-    </div>
+
+            <button type="submit"  style="width:100%;" class="btn btn-outline-primary">Update</button>
+   
+
 
 </form>
 
