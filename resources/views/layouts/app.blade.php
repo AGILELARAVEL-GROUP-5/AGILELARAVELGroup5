@@ -29,11 +29,7 @@
 <body>
 
     <div id="app" class="text-justify">
-      <div class="jumbotron text-center h1 font-weight-bold" style="margin-bottom:0">
-         The AGILE Development Framework
-      </div>
-        
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
+        <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark bg-gradient shadow-sm">
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}">
                     <div class = "h3 font-weight-bolder text-danger">AGILE</div>
@@ -112,6 +108,10 @@
                 </div>
             </div>
         </nav>
+
+     <div class="jumbotron text-center h1 font-weight-bold" style="margin-bottom:0">
+         The AGILE Development Framework
+      </div>
         
         <main class="py-3 px-3 bg-primary">
      
